@@ -22,9 +22,10 @@ while a > 100:                             # focus on 3 digits numbers only
             print(f"{a} * {b} = {a*b}")
             if a*b > largest_palindrome:                    # check if it is bigger than other palindromes produts we found before
                 largest_palindrome = a*b                       # if it is bigger, store it
+                largest_factors = (a,b)
         b = b - 1                                      # run thorugh second factor, until 100
     else:
         a = a-1                                         # once we finished looping through the second factor, lower the first factor by 1
         b = 999                                         # and reinitalize the the second facotr
 
-print(f"largest palindrome: {largest_palindrome}")
+print(f"largest palindrome: {largest_palindrome}, {largest_factors}")
