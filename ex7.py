@@ -1,4 +1,5 @@
 def isPrime(num):
+    """ check if a number is a prime number """
     i = 1
     while i<num:
         if num % i == 0 and i != 1:
@@ -7,6 +8,7 @@ def isPrime(num):
     return True
 
 def skip_devided(x, sety):
+    """ verify if there a need to check a gien number"""
     for y in sety:
         if x % y == 0 and x!=1 and y!=1:
             return True
